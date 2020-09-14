@@ -81,6 +81,18 @@ For example, the user might recieve student mobility data, such as a transcript 
 
 **User Story:** The user wishes to cluster HEIs by geographical location, preferably based on coordinates. (NUTS2 regions are not universally available beyond the EU.)
 
+#### Automatic verification of accreditation
+
+**Actor:** Supplier of digital credential services, EMREX
+
+**Submitter:** [Geir Vangen](https://github.com/geirmv)
+
+**User Story:** The user wishes to get an automatic check of the accreditation of a person’s digital credentials. This involves check of institution, study program, qualification, courses, modules etc. 
+
+This is also a part of the user story regarding EDCI Accreditation Database. But this is a proposal for a standardized decentralized network of accreditation information, where data are governed locally (by e.g. Enic-Naric organizations) with the possibility of national or local storage of accreditation data. Both central and decentralized verification services should be able to use these local nodes to check accreditation, each node should operate independent of the rest of the network. These verification services should be open for use from any system or network handling digital credentials (Ex EMREX, EWP, Diploma registry services). When digitalizing diplomas, transcript of records etc, these data and surrounding services need to persist for many decades.
+
+**Restrictions:** none (so far)
+
 ## Requirements
 
 To be derived from use cases and discussed at first meeting.
