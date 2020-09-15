@@ -37,16 +37,7 @@ For students, a European Student ID is under development as a federated/delegate
 
 ### Data Structure
 
-Different systems should use agreed data models/structures, or at least make the data models/structures they use fully transparent. This will allow easy communication and conversion of data between systems.
-
-At European level, it might be useful to agree on minimum common data formats for describing:
-
-1. Information on countries and their higher education system(s)
-1. Basic information on higher education institutions
-1. Information on study programmes
-1. Information on quality assurance (of an institution or programme)
-1. Information on student achievements (credits)
-1. Information on a qualification awarded
+Different systems should use agreed data models/structures, or at least make the data models/structures they use fully transparent. This will allow easy communication and conversion of data between systems. An agreement would cover the minimum fields different data models should harmonise, for the purposes of promoting interoperability.
 
 Different organisations, dealing with such data, have already developed their data models. These should be used as a starting point.
 
@@ -104,25 +95,6 @@ The Initiative recognises that different organisations each manage specific init
 ### Licence Requirements
 Free (as in air)
 
-Applications & Priorities
--------------------------
-
-The following sections list concrete problem domains that should be tackled, in order of priority:
-
-### Higher Education Institution Identifiers
-
-Given their crucial importance, we suggest that Higher Education Institution Identifiers be the first problem domain to be concretely addressed.
-The following [whitepaper](Problem%20Domains/HEI%20Identifiers.md) discusses options for HEI Identifiers.
-
-### Minimum Common Data Formats
-An agreement would cover the minimum fields different data models should harmonise, for the purposes of promoting interoperability.
-
-### Course Identifiers
-
-If HEI Identifiers are solved, it becomes easy to solve course identifiers, via a specification that sets a course identifier as HEI Identifier/Course Identifier. We therefore would propose addressing this issue after HEI Identifiers
-
-Other problem domains should be added over time
-
 Working Methods
 ---------------
 
@@ -157,6 +129,33 @@ Each problem domain must follow a standardised procedure for resolution:
 6.  **Agreement of  Standard**
 
     Once the standard is published, members/organisations should notify their implementation of it.
+
+
+Applications & Priorities
+-------------------------
+
+The following sections list concrete problem domains that should be tackled, in order of priority:
+
+### Higher Education Institution Identifiers
+
+Given their crucial importance, we suggest that Higher Education Institution Identifiers be the first problem domain to be concretely addressed.
+The following [whitepaper](Problem%20Domains/HEI%20Identifiers.md) discusses options for HEI Identifiers.
+
+### Minimum Common Data Formats
+An agreement would cover the minimum fields different data models should harmonise, for the purposes of promoting interoperability.  At European level, it might be useful to agree on minimum common data formats for describing:
+
+1. Information on countries and their higher education system(s)
+1. Basic information on higher education institutions
+1. Information on study programmes
+1. Information on quality assurance (of an institution or programme)
+1. Information on student achievements (credits)
+1. Information on a qualification awarded
+
+### Course Identifiers
+
+If HEI Identifiers are solved, it becomes easy to solve course identifiers, via a specification that sets a course identifier as HEI Identifier/Course Identifier. We therefore would propose addressing this issue after HEI Identifiers
+
+Other problem domains should be added over time
 
 <hr />
 
