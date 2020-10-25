@@ -1323,7 +1323,7 @@ Possible extra rowspan handling
 </style>
   <meta content="Bikeshed version 89ebb6ab, updated Fri Oct 9 15:32:07 2020 -0700" name="generator">
   <link href="https://knowledge-innovation-centre.github.io/HEIDI/" rel="canonical">
-  <meta content="bff0421eda951cbf3f2f609c038b1135d58e3696" name="document-revision">
+  <meta content="a691b10516043993c1bb46a41351638eadd31740" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1732,6 +1732,32 @@ Parts of this work may be from another specification document.  If so, those par
   <nav data-fill-with="table-of-contents" id="toc">
    <h2 class="no-num no-toc no-ref" id="contents">Table of Contents</h2>
    <ol class="toc" role="directory">
+    <li><a href="#intro"><span class="secno">1</span> <span class="content">Introduction and Goals</span></a>
+    <li>
+     <a href="#problems"><span class="secno">2</span> <span class="content">Overview of Problem Domains</span></a>
+     <ol class="toc">
+      <li><a href="#identifiers"><span class="secno">2.1</span> <span class="content">Identifiers</span></a>
+      <li><a href="#data-structure"><span class="secno">2.2</span> <span class="content">Data Structure</span></a>
+      <li><a href="#data-availability"><span class="secno">2.3</span> <span class="content">Data Availability</span></a>
+      <li><a href="#data-portability"><span class="secno">2.4</span> <span class="content">Data Portability</span></a>
+      <li><a href="#other-issues"><span class="secno">2.5</span> <span class="content">Other Issues</span></a>
+     </ol>
+    <li><a href="#initiatives"><span class="secno">3</span> <span class="content">Initiatives Requiring Interoperability</span></a>
+    <li>
+     <a href="#design-req"><span class="secno">4</span> <span class="content">Design Requirements for an Interoperability Initiative</span></a>
+     <ol class="toc">
+      <li><a href="#scope"><span class="secno">4.1</span> <span class="content">Scope</span></a>
+      <li><a href="#governance-requirements"><span class="secno">4.2</span> <span class="content">Governance Requirements</span></a>
+      <li><a href="#licence-requirements"><span class="secno">4.3</span> <span class="content">Licence Requirements</span></a>
+     </ol>
+    <li><a href="#heidi-working-methods"><span class="secno">5</span> <span class="content">Working Methods</span></a>
+    <li>
+     <a href="#priorities"><span class="secno">6</span> <span class="content">Applications &amp; Priorities</span></a>
+     <ol class="toc">
+      <li><a href="#higher-education-institution-identifiers"><span class="secno">6.1</span> <span class="content">Higher Education Institution Identifiers</span></a>
+      <li><a href="#minimum-common-data-formats"><span class="secno">6.2</span> <span class="content">Minimum Common Data Formats</span></a>
+      <li><a href="#course-identifiers"><span class="secno">6.3</span> <span class="content">Course Identifiers</span></a>
+     </ol>
     <li><a href="#conformance"><span class="secno"></span> <span class="content"> Conformance</span></a>
     <li>
      <a href="#references"><span class="secno"></span> <span class="content">References</span></a>
@@ -1741,14 +1767,14 @@ Parts of this work may be from another specification document.  If so, those par
    </ol>
   </nav>
   <main>
-   <h3 class="heading settled" id="intro"><span class="content">Introduction and Goals</span></h3>
+   <h2 class="heading settled" data-level="1" id="intro"><span class="secno">1. </span><span class="content">Introduction and Goals</span><a class="self-link" href="#intro"></a></h2>
    <p>There are a number of data-related projects and systems in European higher education, tackling student data, statistics or databases of institutions, amongst others. At the moment, we are not really interoperable. This creates costs, ineffeciencies and lack of transparency. In their draft Rome Communiqué, to be adopted in November 2020, European ministers of higher education recognise the need "to enhance the interoperability of digital systems and the exchange of student and institutional data, in full respect of privacy and security".</p>
    <p>We would thus like to see these projects/systems interoperate seamlessly and thus serve best a large number of users in the European higher education community. Better linking the various data sets and systems would maximise their potential, transferring or correlating data between different systems may open entirely new use cases or valuable insights.</p>
    <p>A range of informal conversations were held on the need to address interoperability between a range of individuals and initiatives throughout 2019, including the European University Foundation (EUF), the European Quality Assurance Register (EQAR) and the Europass Interoperability Expert. These have worked together to prepare for a first meeting.</p>
    <p>In its <a href="https://www.eqar.eu/kb/projects/deqar-connect/">DEQAR CONNECT project</a>, EQAR undertook to convene a roundtable of higher education data-related projects and initiatives, and to initiate a discussion on interoperability. EQAR therefore volunteers to host an initial meeting as part of the DEQAR CONNECT project, but considers that HEIDI should then develop into a self-standing initiative.</p>
-   <h3 class="heading settled" id="problems"><span class="content">Overview of Problem Domains</span></h3>
+   <h2 class="heading settled" data-level="2" id="problems"><span class="secno">2. </span><span class="content">Overview of Problem Domains</span><a class="self-link" href="#problems"></a></h2>
    <p>There are various problem domains, some more pressing than others. The following inventory is in order of priority:</p>
-   <h4 class="heading settled" id="identifiers"><span class="content">Identifiers</span></h4>
+   <h3 class="heading settled" data-level="2.1" id="identifiers"><span class="secno">2.1. </span><span class="content">Identifiers</span><a class="self-link" href="#identifiers"></a></h3>
    <p>Identifiers are needed to unambiguously identify entities when communicating or transfering data between systems. The following entities frequently need to be identified in higher education:</p>
    <ol>
     <li data-md>
@@ -1766,17 +1792,17 @@ Parts of this work may be from another specification document.  If so, those par
    <p>Higher education institutions are a pivotal enitity, and institutional identifiers thus a matter of priority. Various approaches already exist (e.g. PIC, ETER, Erasmus Code, EIDAS), but are not articulated to each other. At the same time, given less than 10000 HEIs in Europe the numbers are relatively managable.</p>
    <p>For study programmes, courses and students numbers are larger by magnitudes.</p>
    <p>For students, a European Student ID is under development as a federated/delegated system based on institutional student IDs.</p>
-   <h4 class="heading settled" id="datastructure"><span class="content">Data Structure {#datastructure}</span></h4>
+   <h3 class="heading settled" data-level="2.2" id="data-structure"><span class="secno">2.2. </span><span class="content">Data Structure</span><a class="self-link" href="#data-structure"></a></h3>
    <p>Different systems should use agreed data models/structures, or at least make the data models/structures they use fully transparent. This will allow easy communication and conversion of data between systems. An agreement would cover the minimum fields different data models should harmonise, for the purposes of promoting interoperability.</p>
    <p>Different organisations, dealing with such data, have already developed their data models. These should be used as a starting point.</p>
-   <h4 class="heading settled" id="dataavailability"><span class="content">Data Availability {#dataavailability}</span></h4>
+   <h3 class="heading settled" data-level="2.3" id="data-availability"><span class="secno">2.3. </span><span class="content">Data Availability</span><a class="self-link" href="#data-availability"></a></h3>
    <p>Data on students and their achievement is personal data and will thus generally be private.</p>
    <p>All other data discussed herein (institutions, courses, etc.) is inherently public. In addition to being accessible through a public web interface, all projects/systems should also make their data fully open and accessible for download or through an API.</p>
-   <h4 class="heading settled" id="dataportability"><span class="content">Data Portability {#dataportability}</span></h4>
+   <h3 class="heading settled" data-level="2.4" id="data-portability"><span class="secno">2.4. </span><span class="content">Data Portability</span><a class="self-link" href="#data-portability"></a></h3>
    <p><em>(placeholder)</em></p>
-   <h4 class="heading settled" id="other"><span class="content">Other Issues {#other}</span></h4>
+   <h3 class="heading settled" data-level="2.5" id="other-issues"><span class="secno">2.5. </span><span class="content">Other Issues</span><a class="self-link" href="#other-issues"></a></h3>
    <p><em>(placeholder)</em></p>
-   <h3 class="heading settled" id="initiatives"><span class="content">Initiatives Requiring Interoperability</span></h3>
+   <h2 class="heading settled" data-level="3" id="initiatives"><span class="secno">3. </span><span class="content">Initiatives Requiring Interoperability</span><a class="self-link" href="#initiatives"></a></h2>
    <p>There are numerous local, regional, national, European and international initiatives that deal with data in higher education. HEIDI aims to bring together the essential European-level projects and systems, focusing on publicly-funded or publicly-endorsed ones with systemic impact on a European scale.</p>
    <p>The following initiatives are invited to the initial roundtable:</p>
    <ul>
@@ -1802,17 +1828,17 @@ Parts of this work may be from another specification document.  If so, those par
      <p>IAU World Higher Education Database (WHED)</p>
    </ul>
    <p>Additional initiatives might join HEIDI in agreement with those already involved.</p>
-   <h3 class="heading settled" id="design-req"><span class="content">Design Requirements for an Interoperability Initiative</span></h3>
+   <h2 class="heading settled" data-level="4" id="design-req"><span class="secno">4. </span><span class="content">Design Requirements for an Interoperability Initiative</span><a class="self-link" href="#design-req"></a></h2>
    <p>Given the rapid progress of these initiatives and the policy priority attached to digitalisation, the Initiative needs to be able to act and reach agreement on crucial standards quickly.</p>
-   <h4 class="heading settled" id="heidi-scope"><span class="content">Scope {#heidi-scope}</span></h4>
+   <h3 class="heading settled" data-level="4.1" id="scope"><span class="secno">4.1. </span><span class="content">Scope</span><a class="self-link" href="#scope"></a></h3>
    <p>It is suggested that the Initiative focuses on higher education within the 48 countries making up the European Higher Education Area (EHEA). (Nevertheless, results might be scalable geographically or transferable to other sectors later on.)</p>
-   <h4 class="heading settled" id="heidi-governance"><span class="content">Governance Requirements {#heidi-governance}</span></h4>
+   <h3 class="heading settled" data-level="4.2" id="governance-requirements"><span class="secno">4.2. </span><span class="content">Governance Requirements</span><a class="self-link" href="#governance-requirements"></a></h3>
    <p>The Initiative should be stakeholder-led, that is, driven by the initiatives concerned. The organisations running these initiatives have expertise in their field and are best-placed to agree on standards jointly.</p>
    <p>It should be ensured that the European Commission, governments and further stakeholders (e.g. European representative organisations) endorse the Initiative’s efforts and standards. Given the scope, this could be best achieved by informing the EHEA’s working structures, i.e. the Bologna Follow-Up Group (BFUG), and possibly suggesting that the Initiative become part of the 2020-2023 EHEA work programme.</p>
    <p>The Initiative recognises that different organisations each manage specific initiatives/systems within their own remit, and does not aim to change these.</p>
-   <h4 class="heading settled" id="heidi-licence"><span class="content">Licence Requirements {#heidi-licence}</span></h4>
+   <h3 class="heading settled" data-level="4.3" id="licence-requirements"><span class="secno">4.3. </span><span class="content">Licence Requirements</span><a class="self-link" href="#licence-requirements"></a></h3>
     Free (as in air) 
-   <h3 class="heading settled" id="heidi-working-methods"><span class="content">Working Methods</span></h3>
+   <h2 class="heading settled" data-level="5" id="heidi-working-methods"><span class="secno">5. </span><span class="content">Working Methods</span><a class="self-link" href="#heidi-working-methods"></a></h2>
    <p>Any group of members of the group may propose a problem domain to be addressed. Prioritisation of problem domains are the remit of the whole group.</p>
    <p>Each problem domain should be tackled via regular web conferences, held at least once a month.</p>
    <p>Typically a problem domain should be managed by a <em>policy group</em> supported by a <em>technical group</em> who gives independent technical advice to the policy group.</p>
@@ -1837,12 +1863,12 @@ Parts of this work may be from another specification document.  If so, those par
      <p><strong>Agreement of  Standard</strong></p>
      <p>Once the standard is published, members/organisations should notify their implementation of it.</p>
    </ol>
-   <h3 class="heading settled" id="priorities"><span class="content">Applications &amp; Priorities</span></h3>
+   <h2 class="heading settled" data-level="6" id="priorities"><span class="secno">6. </span><span class="content">Applications &amp; Priorities</span><a class="self-link" href="#priorities"></a></h2>
    <p>The following sections list concrete problem domains that should be tackled, in order of priority:</p>
-   <h4 class="heading settled" id="HEI-Identifiers"><span class="content">Higher Education Institution Identifiers {#HEI-Identifiers}</span></h4>
-   <p>Given their crucial importance, we suggest that Higher Education Institution Identifiers be the first problem domain to be concretely addressed.
-The following <a href="Problem%20Domains/HEI%20Identifiers.md">whitepaper</a> discusses options for HEI Identifiers.</p>
-   <h4 class="heading settled" id="minimum-common-data-formats"><span class="content">Minimum Common Data Formats</span></h4>
+   <h3 class="heading settled" data-level="6.1" id="higher-education-institution-identifiers"><span class="secno">6.1. </span><span class="content">Higher Education Institution Identifiers</span><a class="self-link" href="#higher-education-institution-identifiers"></a></h3>
+    Given their crucial importance, we suggest that Higher Education Institution Identifiers be the first problem domain to be concretely addressed.
+The following <a href="Problem%20Domains/HEI%20Identifiers.md">whitepaper</a> discusses options for HEI Identifiers. 
+   <h3 class="heading settled" data-level="6.2" id="minimum-common-data-formats"><span class="secno">6.2. </span><span class="content">Minimum Common Data Formats</span><a class="self-link" href="#minimum-common-data-formats"></a></h3>
     An agreement would cover the minimum fields different data models should harmonise, for the purposes of promoting interoperability.  At European level, it might be useful to agree on minimum common data formats for describing: 
    <ol>
     <li data-md>
@@ -1858,14 +1884,14 @@ The following <a href="Problem%20Domains/HEI%20Identifiers.md">whitepaper</a> di
     <li data-md>
      <p>Information on a qualification awarded</p>
    </ol>
-   <h4 class="heading settled" id="course-identifiers"><span class="content">Course Identifiers {#course-identifiers}</span></h4>
+   <h3 class="heading settled" data-level="6.3" id="course-identifiers"><span class="secno">6.3. </span><span class="content">Course Identifiers</span><a class="self-link" href="#course-identifiers"></a></h3>
    <p>If HEI Identifiers are solved, it becomes easy to solve course identifiers, via a specification that sets a course identifier as HEI Identifier/Course Identifier. We therefore would propose addressing this issue after HEI Identifiers</p>
    <p>Other problem domains should be added over time</p>
    <hr>
    <p><img align="right" src="https://www.eqar.eu/assets/uploads/2018/04/LogosBeneficairesErasmusLEFT_EN-e1524042594488.jpg"> <em>The DEQAR CONNECT project is co-funded by the European Union’s Erasmus+ programme. The EU support does not constitute an endorsement of the contents of this material, which reflects the views only of the authors, and the Commission cannot be held responsible for any use which may be made of the information contained herein.</em></p>
   </main>
   <div data-fill-with="conformance">
-   <h2 class="no-ref no-num heading settled" id="conformance"><span class="content"> Conformance</span></h2>
+   <h2 class="no-ref no-num heading settled" id="conformance"><span class="content"> Conformance</span><a class="self-link" href="#conformance"></a></h2>
    <p> Conformance requirements are expressed with a combination of descriptive assertions and RFC 2119 terminology.
             The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL”
             in the normative parts of this document
@@ -2010,8 +2036,8 @@ The following <a href="Problem%20Domains/HEI%20Identifiers.md">whitepaper</a> di
 
 })();
 </script>
-  <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span></h2>
-  <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span></h3>
+  <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
+  <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
    <dt id="biblio-rfc2119">[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
